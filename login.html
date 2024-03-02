@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login Image Steganography</h2>
+        
+        <!-- Login form -->
+        <form id="loginForm">
+           <p> <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            
+            <button type="button" onclick="login()">Login</button></p>
+        </form>
+
+        <!-- Error message display -->
+        <div id="errorMessage" class="hidden"></div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

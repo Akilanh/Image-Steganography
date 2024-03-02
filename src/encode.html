@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Encode Message</title>
+</head>
+<body>
+    <div class="center-link">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="encode-container">
+        <h2>Encode Message</h2>
+        
+        <!-- Form for image import and text encoding -->
+        <form id="encodeForm">
+            <label for="imageInput">Select Image:</label>
+            <input type="file" id="imageInput" accept="image/*">
+            
+            <label for="messageInput">Enter Message:</label>
+            <textarea id="messageInput" rows="4" cols="50"></textarea>
+            
+            <button type="button" onclick="encode()">Encode</button>
+        </form>
+
+        <!-- Display the encoded image -->
+        <div id="encodedImageContainer" class="hidden">
+            <h3>Encoded Image:</h3>
+            <img id="encodedImage" alt="Encoded Image">
+            
+            <!-- Save the encoded image button -->
+            <button onclick="saveEncodedImage()">Save Encoded Image</button>
+        </div>
+
+        <script src="encode.js"></script>
+    </div>
+
+</body>
+</html>

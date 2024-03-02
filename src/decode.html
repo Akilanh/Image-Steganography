@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Decode Message</title>
+</head>
+<body>
+    <div class="center-link">
+        <a href="index.html">Home</a>
+    </div>
+    
+    <div class="decode-container">
+        <h2>Decode Message</h2>
+
+        <!-- Form for selecting the encoded image -->
+        <form id="decodeForm">
+            <label for="encodedImageInput">Select Encoded Image:</label>
+            <input type="file" id="encodedImageInput" accept="image/*">
+            
+            <!-- Decode button -->
+            <button type="button" onclick="decode()">Decode</button>
+        </form>
+        <!-- Display the decoded image -->
+        <img id="decodedImage" alt="Decoded Image">
+    </div>
+
+
+        <!-- Display the decoded message -->
+        <div id="decodedMessageContainer" class="hidden">
+            <h3>Decoded Message:</h3>
+            <p id="decodedMessage"></p>
+            
+            
+        <script src="decode.js"></script>
+    </div>
+</body>
+</html>
